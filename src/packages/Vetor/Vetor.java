@@ -40,6 +40,24 @@ public class Vetor{
         return false;
     }
 
+    //Sobrecarga do método adicionar
+    public boolean adiciona(int posicao, String elemento){
+
+        if(!(posicao >=0 && posicao < this.tamanho)){
+            throw new IllegalArgumentException("Posição inválida");
+        }
+        
+        //mover todos os elementos
+        for(int i = this.tamanho - 1; i >= posicao; i--){
+            this.elementos[i + 1] = this.elementos[i];
+        }
+
+        this.elementos[posicao] = elemento;
+        this.tamanho++;
+
+        return true;
+    }
+
     public String busca(int posicao){
         
         if(!(posicao >=0 && posicao < this.tamanho)){
@@ -70,7 +88,7 @@ public class Vetor{
 
         stringBuilder.append("[");
 
-        for(int  i = 0; i < this.tamanho; i++){
+        for(int  i = 0; i < this.tamanho - 1; i++){
             stringBuilder.append(this.elementos[i]);
             stringBuilder.append(", ");
         }
