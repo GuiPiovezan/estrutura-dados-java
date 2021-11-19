@@ -15,7 +15,7 @@ public class Aula17 {
         System.out.println(pilha);
         System.out.println(pilha.topo());
 
-        pilha.desempilhar();
+        System.out.println("Elemento desempilhado: " + pilha.desempilhar());
         System.out.println(pilha);
         System.out.println(pilha.topo());
 
