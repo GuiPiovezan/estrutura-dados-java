@@ -91,6 +91,18 @@ public class VetorGeneric<T> {
         this.tamanho--;
     }
 
+    //exercício 01 - implmentar método contém elemento que retorna um boolean
+    public boolean contem(T elemento){
+
+        for(int i = 0; i < tamanho; i++){
+            if(this.elementos[i].equals(elemento)){
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     @Override
     public String toString(){
 
