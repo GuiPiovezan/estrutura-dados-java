@@ -94,13 +94,7 @@ public class VetorGeneric<T> {
     //exercício 01 - implmentar método contém elemento que retorna um boolean
     public boolean contem(T elemento){
 
-        for(int i = 0; i < tamanho; i++){
-            if(this.elementos[i].equals(elemento)){
-                return true;
-            }
-        }
-
-        return false;
+        return busca(elemento) > -1;
     }
 
     //exercício 02 - implementar método ultimoIndice semelhante a lastIndexOf() de ArrayList
