@@ -36,6 +36,11 @@ public class Aula12 {
 
 
         System.out.println(vetor.ultimoIndice("450"));
+
+        vetor.remove("30");
+        System.out.println(vetor);
+
+        vetor.remove("450");
         
     }
 }

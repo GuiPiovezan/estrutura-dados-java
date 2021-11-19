@@ -114,6 +114,26 @@ public class VetorGeneric<T> {
         return -1;
     }
 
+    //exercício 03 - implementar método remove passando como parâmetro o elemento a ser removido
+    public void remove(T elemento) throws IllegalArgumentException{
+        int posicao = -1;
+        for(int i = 0; i < this.tamanho; i++){
+            if(this.elementos[i].equals(elemento)){
+                posicao = i;
+            }
+        }
+
+        if(posicao > -1){
+            for(int  i = posicao; i < this.tamanho - 1; i++){
+                this.elementos[i] = this.elementos[i + 1];
+            }
+
+            this.tamanho --;
+        } else {
+            throw new IllegalArgumentException("Posição inválida");
+        }
+    }
+
     @Override
     public String toString(){
 
