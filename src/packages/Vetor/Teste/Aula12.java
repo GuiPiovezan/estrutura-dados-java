@@ -10,6 +10,9 @@ public class Aula12 {
 
         arrayList.add("10");
         arrayList.add("20");
+        arrayList.add("40");
+        arrayList.add("120");
+        arrayList.add("240");
 
         if(arrayList.contains("10")){
             System.out.println("O elemento existe");
@@ -17,7 +20,9 @@ public class Aula12 {
             System.out.println("O elemento não existe");
         }
 
-        VetorGeneric<String> vetor = new VetorGeneric<String>(10);
+        System.out.println(arrayList.lastIndexOf("350"));
+
+        VetorGeneric<String> vetor = new VetorGeneric<>(10);
 
         vetor.adiciona("30");
         vetor.adiciona("80");
@@ -28,6 +33,9 @@ public class Aula12 {
         } else {
             System.out.println("Não existe elemento");
         }
+
+
+        System.out.println(vetor.ultimoIndice("450"));
         
     }
 }

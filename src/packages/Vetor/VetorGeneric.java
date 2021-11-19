@@ -103,6 +103,17 @@ public class VetorGeneric<T> {
         return false;
     }
 
+    //exercício 02 - implementar método ultimoIndice semelhante a lastIndexOf() de ArrayList
+    public int ultimoIndice(T elemento){
+        for(int i = 0; i < tamanho; i++){
+            if(this.elementos[i].equals(elemento)){
+                return i;
+            } 
+        }   
+    
+        return -1;
+    }
+
     @Override
     public String toString(){
 
