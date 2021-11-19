@@ -99,14 +99,13 @@ public class VetorGeneric<T> {
 
     //exercício 02 - implementar método ultimoIndice semelhante a lastIndexOf() de ArrayList
     public int ultimoIndice(T elemento){
-        int ultimaPosicao = -1;
-        for(int i = 0; i < tamanho; i++){
+        for(int i = this.tamanho - 1; i >= 0; i--){
             if(this.elementos[i].equals(elemento)){
-                ultimaPosicao = i;
+               return i;
             } 
         }   
     
-        return ultimaPosicao;
+        return -1;
     }
 
     //exercício 03 - implementar método remove passando como parâmetro o elemento a ser removido
