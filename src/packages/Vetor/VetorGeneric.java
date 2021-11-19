@@ -129,6 +129,10 @@ public class VetorGeneric<T> {
             this.elementos[i] = null;
         }
         this.tamanho = 0;
+
+        /**
+         * this.elementos = (T[]) new Object(this.elementos.lenght);
+         */
     }
 
     @Override
