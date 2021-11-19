@@ -143,6 +143,14 @@ public class VetorGeneric<T> {
         return this.elementos[posicao];
     }
 
+    //exercício 05 - implementar método limpar() semelhante ao clear() de ArrayList
+    public void limpar(){
+        for(int i = 0; i < tamanho; i++){
+            this.elementos[i] = null;
+        }
+        this.tamanho = 0;
+    }
+
     @Override
     public String toString(){
 

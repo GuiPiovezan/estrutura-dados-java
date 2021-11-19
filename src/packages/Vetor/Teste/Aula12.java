@@ -13,6 +13,9 @@ public class Aula12 {
         arrayList.add("40");
         arrayList.add("120");
         arrayList.add("240");
+        arrayList.clear();
+
+        System.out.println(arrayList);
 
         if(arrayList.contains("10")){
             System.out.println("O elemento existe");
@@ -43,6 +46,16 @@ public class Aula12 {
         //vetor.remove("450");
 
         System.out.println(vetor.obtem(0));
+
+        vetor.adiciona("200");
+        vetor.adiciona("300");
+        vetor.adiciona("8000000000");
+
+        System.out.println(vetor);
+
+        vetor.limpar();
+
+        System.out.println(vetor);
         
     }
 }
