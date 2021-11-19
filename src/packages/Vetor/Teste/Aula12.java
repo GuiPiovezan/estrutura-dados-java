@@ -40,7 +40,9 @@ public class Aula12 {
         vetor.remove("30");
         System.out.println(vetor);
 
-        vetor.remove("450");
+        //vetor.remove("450");
+
+        System.out.println(vetor.obtem(0));
         
     }
 }
