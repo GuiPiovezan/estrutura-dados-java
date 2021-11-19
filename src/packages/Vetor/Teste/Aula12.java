@@ -1,8 +1,8 @@
-package packages.Vetor.Teste;
+package packages.vetor.teste;
 
 import java.util.ArrayList;
 
-import packages.Vetor.VetorGeneric;
+import packages.vetor.VetorGeneric;
 
 public class Aula12 {
     public static void main(String[] args) {

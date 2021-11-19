@@ -1,8 +1,6 @@
-package packages.Vetor;
+package packages.vetor;
 
 import java.lang.reflect.Array;
-import java.rmi.RemoteException;
-import java.rmi.server.RemoteStub;
 
 public class VetorGeneric<T> {
     private T[] elementos;

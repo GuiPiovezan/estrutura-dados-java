@@ -1,4 +1,4 @@
-package packages.Vetor.Teste;
+package packages.vetor.teste;
 
 public class Contato {
     private String nome;

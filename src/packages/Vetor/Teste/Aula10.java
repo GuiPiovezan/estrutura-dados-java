@@ -1,6 +1,6 @@
-package packages.Vetor.Teste;
+package packages.vetor.teste;
 
-import packages.Vetor.VetorObjetos;
+import packages.vetor.VetorObjetos;
 
 public class Aula10 {
     public static void main(String[] args) {

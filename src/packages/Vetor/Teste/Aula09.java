@@ -1,6 +1,6 @@
-package packages.Vetor.Teste;
+package packages.vetor.teste;
 
-import packages.Vetor.Vetor;
+import packages.vetor.Vetor;
 
 public class Aula09 {
     public static void main(String[] args) {
