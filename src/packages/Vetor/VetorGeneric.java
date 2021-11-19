@@ -1,6 +1,7 @@
 package packages.Vetor;
 
 import java.lang.reflect.Array;
+import java.rmi.server.RemoteStub;
 
 public class VetorGeneric<T> {
     private T[] elementos;
@@ -93,19 +94,19 @@ public class VetorGeneric<T> {
 
     //exercício 01 - implmentar método contém elemento que retorna um boolean
     public boolean contem(T elemento){
-
         return busca(elemento) > -1;
     }
 
     //exercício 02 - implementar método ultimoIndice semelhante a lastIndexOf() de ArrayList
     public int ultimoIndice(T elemento){
+        int ultimaPosicao = -1;
         for(int i = 0; i < tamanho; i++){
             if(this.elementos[i].equals(elemento)){
-                return i;
+                ultimaPosicao = i;
             } 
         }   
     
-        return -1;
+        return ultimaPosicao;
     }
 
     //exercício 03 - implementar método remove passando como parâmetro o elemento a ser removido
