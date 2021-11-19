@@ -120,11 +120,7 @@ public class VetorGeneric<T> {
 
     //exercício 04 - implementar um método obtem() que retornará o elemento dada uma posição
     public T obtem(int posicao){
-        if(!(posicao >=0 && posicao < this.tamanho)){
-            throw new IllegalArgumentException("Posição inválida");
-        }
-
-        return this.elementos[posicao];
+        return this.busca(posicao);
     }
 
     //exercício 05 - implementar método limpar() semelhante ao clear() de ArrayList
