@@ -8,9 +8,9 @@ public class Desafio02 {
     }
 
     public static void exibiResultado(){
-        System.out.println("Os símbolos da equação estão " + (testaExpressaoMatematica("((A+B) + D)") ? "correta" : "errada"));
-        System.out.println("Os símbolos da equação estão "+ (testaExpressaoMatematica("((A+B)") ? "correta" : "errada"));
-        System.out.println("Os símbolos da equação estão "+ (testaExpressaoMatematica("A + B(") ? "correta" : "errada"));
+        System.out.println("A equação " + (testaExpressaoMatematica("((A+B) + D)") ? "está balanceada" : "não está balanceada"));
+        System.out.println("A equação "+ (testaExpressaoMatematica("((A+B)") ? "está balanceada" : "não está balanceada"));
+        System.out.println("A equação "+ (testaExpressaoMatematica("A + B(") ? "está balanceada" : "não está balanceada"));
     }
 
     public static boolean testaExpressaoMatematica(String valor){
@@ -31,9 +31,6 @@ public class Desafio02 {
         if(tamanhoSimbolosMatematicos % 2 == 0){
             for(int i = 0; i < (tamanhoSimbolosMatematicos / 2); i++){
                 metadeSimbolosMatematicos[i] = simbolosMatematicos.pop();
-            }
-
-            for(int i = 0; i < tamanhoSimbolosMatematicos / 2; i++){
                 if(simbolosMatematicos.get(i).equals("(") && metadeSimbolosMatematicos[i].equals(")")){
                     count++;
                 }
