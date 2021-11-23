@@ -26,8 +26,7 @@ public class Exer01 {
         
         if(pilha.estaVazia()){
             System.out.println("Pilha vazia");
-        } else 
-        {
+        } else {
             for(int i = pilha.getTamanho() - 1; i > -1; i--){
                 System.out.println(pilha.desempilhar());
             }
